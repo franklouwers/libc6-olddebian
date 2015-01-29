@@ -1,6 +1,14 @@
-# Rebuilt libc6 packages for lenny (with "Ghost" patch)
+# Rebuilt libc6 packages for old Debian distributions (with "Ghost" patch)
 
 We needed to build these packages to counter the Ghost issue.
+
+## What Distro's
+
+  * Debian Lenny i386
+  * Debian Etch i386
+  * Ubuntu Dapper i386
+  * Debian Sarge i386
+  * Debian Woody i386 (yeah, Woody. that's 3.0)
 
 ## Why o why?
 
@@ -13,9 +21,11 @@ we did to the community, as to be ashamed and keep this for ourselfs.
 
 The binary packages are only provided as a help for those too lazy to 
 build the packages themself. I made them by taking the source package,
-unpackaging it, applying the Debian patches, and then applying the
+unpackaging it, applying the regular Debian patches, and then applying the
 same patch as the squeeze-lts team used to build their updated libc.
 The patch applies nicely (with 1 HUNK) and package builds normally.
+Except for the woody one, that needed some more fiddling before
+actually accepting the patch.
 
 
 Cheers & happy ops'ing,
